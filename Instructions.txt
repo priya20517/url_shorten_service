@@ -1,0 +1,25 @@
+Instructions:
+Use POSTMAN for better experience
+url: /short_url
+GET : Generate list of all urls
+    url: /short_url
+
+POST: generate new short url
+    url: /short_url
+    body: {
+    "original_url": "example.com"
+    }
+
+POST: Fetch original url list by using short url
+    url: /short_url
+    body: {
+    "short_url": "https://tinyurl.com/<urlid>"
+    }
+
+DELETE:
+    url: /short_url
+    body: {
+    "original_url": "example.com"
+    }
+
+
